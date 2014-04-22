@@ -1,3 +1,5 @@
+// mamacdon: renamed exported global symbol to prevent collisions with other versions loaded simultaneously
+
 /*
   Copyright (C) 2013 Ariya Hidayat <ariya.hidayat@gmail.com>
   Copyright (C) 2013 Thaddee Tyl <thaddee.tyl@gmail.com>
@@ -53,7 +55,7 @@ parseStatement: true, parseSourceElement: true */
     } else if (typeof exports !== 'undefined') {
         factory(exports);
     } else {
-        factory((root.esprima = {}));
+        factory((root.esprima110tolerant = {}));
     }
 }(this, function (exports) {
     'use strict';

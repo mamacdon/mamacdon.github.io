@@ -1,3 +1,5 @@
+// mamacdon: renamed exported global symbol to prevent collisions with other versions loaded simultaneously
+
 /*
 
   Original copyright is below.  This is version git tag: 310927be9f.
@@ -3818,5 +3820,5 @@ parseStatement: true, parseSourceElement: true */
         return types;
     }());
 
-}(typeof exports === 'undefined' ? (esprima = {}) : exports));
+}(typeof exports === 'undefined' ? (esprima099tolerant = {}) : exports));
 /* vim: set sw=4 ts=4 et tw=80 : */

@@ -1,3 +1,5 @@
+// mamacdon: renamed exported global symbol to prevent collisions with other versions loaded simultaneously
+
 /*
   Copyright (C) 2012 Ariya Hidayat <ariya.hidayat@gmail.com>
   Copyright (C) 2012 Mathias Bynens <mathias@qiwi.be>
@@ -3573,5 +3575,5 @@ parseStatement: true, parseSourceElement: true */
         return types;
     }());
 
-}(typeof exports === 'undefined' ? (esprima = {}) : exports));
+}(typeof exports === 'undefined' ? (esprima099 = {}) : exports));
 /* vim: set sw=4 ts=4 et tw=80 : */
