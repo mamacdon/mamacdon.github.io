@@ -26470,7 +26470,7 @@ define('rhino/optimize', ['logger', 'env!env/file'], function (logger, file) {
             try {
                 // Try Nashorn style
                 var stringClass = Java.type("java.lang.String").class;
-                return Java.type("com.google.javascript.jscomp.SourceFile").class.getMethod("fromCode", [stringClass, stringClass]);
+                JSSourceFilefromCode = Java.type("com.google.javascript.jscomp.SourceFile").class.getMethod("fromCode", [stringClass, stringClass]);
             } catch (e) {}
         }
     }
